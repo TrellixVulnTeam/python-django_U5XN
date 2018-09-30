@@ -167,9 +167,9 @@ h4{
 
 /* PAGINA LISTA DE CURSO ABAIXO*/
 .cursos{
-	background-color: black;
+	background-color: white;
 	width: 1300px;
-	height: 70%;
+	height: 90%;
 	margin-top: 20px;
 	margin-left: 30px;
 	padding: 1px;
@@ -214,4 +214,13 @@ h4{
 	list-style:none;
        margin-left:-57px;
 
+}
+.noticia{
+	background-color: white;
+}
+.subtitulo{
+	background-color: white;
+}
+.img_noticia{
+	margin-right: 100px;
 }
