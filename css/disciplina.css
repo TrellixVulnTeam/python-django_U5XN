@@ -24,19 +24,20 @@
 }
 
 .disciplina tr{
-	color: white;
+	color: black;
 	text-align: center;
 	border:1px solid grey;
 }
 .disciplina table,td,th,tr{
+	background: white;
 	border-collapse: collapse;
-	border: 3px solid grey;
+	border: 3px solid black;
 	margin-top: 20px;
 
 }
 .disciplina table{
 	width: 1000px;
-	height: 130px;
+	height: 140px;
 	border-radius: 10px;
 
 
@@ -50,8 +51,9 @@
 	width: 200px;
 }
 .disciplina th{
-	background: white;
+	background: grey;
 	color: black;
+	font-weight: bold;
 }
 
 .disciplina h1{
