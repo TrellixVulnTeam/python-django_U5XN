@@ -1,0 +1,55 @@
+.conteudo_listacurso{
+	background: #e6ecff;
+	width: 100%;
+	height: 1000px;
+}
+
+.cursos{
+	background-color: black;
+	width: 1200px;
+	height: 80%;
+	margin-top: 20px;
+	margin-left: 50px;
+	padding: 1px;
+	border-radius: 5px;
+}
+
+
+.cursos h1{
+	color: white;
+	text-align: center;
+	background: #001a33;
+	width: 100%;
+	font-family: 'Noto Sans', sans-serif;
+}
+
+.cursos li a:hover {
+	background: blue;
+	border:1px solid blue;
+	font-weight: bold;
+}
+
+.cursos li a{
+	color: black;
+	list-style-type: none;
+	text-decoration: none;
+	font-size: 23px;
+	font-family: 'Nunito Sans', sans-serif;
+	margin:5px;
+}
+.cursos li{
+	  display:inline;
+}
+.cursos a{
+	border:3px solid white;
+	background: white;
+	border-radius: 3px;
+
+}
+.cursos ul{
+	list-style-type:none;
+	text-align: center; 
+	list-style:none;
+    margin-left:-57px;
+
+}

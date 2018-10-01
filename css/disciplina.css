@@ -1,0 +1,64 @@
+.conteudo_disciplina{
+	background: #e6ecff;
+	width: 100%;
+	height: 1900px;
+}
+.disciplina{
+	background-color: black;
+	width: 1200px;
+	height: 1800px;
+	margin-top: 20px;
+	margin-left: 5%;
+	padding: 1px;
+	border-radius: 5px;
+
+}
+.disciplina caption{
+	background: grey;
+	color: white;
+	font-size:30px;
+	width:200px;
+	border-radius: 3px;
+	margin:10px;
+	font-weight: bold;
+}
+
+.disciplina tr{
+	color: white;
+	text-align: center;
+	border:1px solid grey;
+}
+.disciplina table,td,th,tr{
+	border-collapse: collapse;
+	border: 3px solid grey;
+	margin-top: 20px;
+
+}
+.disciplina table{
+	width: 1000px;
+	height: 130px;
+	border-radius: 10px;
+
+
+}
+.disciplina td,th{
+	font-size: 20px;
+	text-align: center;
+}
+
+.disciplina td{
+	width: 200px;
+}
+.disciplina th{
+	background: white;
+	color: black;
+}
+
+.disciplina h1{
+	color: white;
+	text-align: center;
+	background: #001a33;
+	width: 100%;
+	font-family: 'Noto Sans', sans-serif;
+
+}
