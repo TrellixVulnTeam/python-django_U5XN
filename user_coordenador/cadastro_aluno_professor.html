@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title></title>
-    <link rel="icon" href="img/icon.png">
-    <link rel="stylesheet" type="text/css" href="css/cadastro_aluno_professor.css">
+    <title>Projeto LMS</title>
+    
+    <link rel="icon" href="../img/icon.png">
+    <link rel="stylesheet" type="text/css" href="../css/cadastro_aluno_professor.css">
+    <link rel="stylesheet" type="text/css" href="../css/formulario.css">
+    
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
     <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-    <script src="script/script.js" ></script>
+    <script src="../script/script.js" ></script>
 
 
 
@@ -89,31 +93,11 @@
   
   <body>
       <div class="sub">
-          <img src="img/logo_sub.png">
+          <img src="../img/logo_sub.png">
       </div>
       <div class="area_aluno">
       <br>
       
-      <div id='cssmenu'>
-          <ul>
-             <li><a href='#'><span>Home</span></a></li>
-             <li class='active has-sub'><a href='#'><span>Area do Coordenador</span></a>
-                <ul>
-                   <li class='has-sub'><a href='#'><span>Coordenador(a) ...... </span></a>
-                      <ul>
-                        <li><a href='#'>				<span>Cadastro de Alunos e professores</span></a></li>
-                        <li class='last'><a href='#'>	<span>Abrir disciplina ofertada</span></a></li>
-            			      <li class='last'><a href='#'>	<span>Liberar matricula de disciplina ofertada</span></a></li>
-                      </ul>
-                   </li>
-               
-                </ul>
-             </li>
-             <li class='last'><a href=''><span>Contato faculdade</span></a></li>
-          </ul>
-          </div>
-
-          <form>
           <div class="box">
             <label> 
               <h1>Criar minha conta</h1>
@@ -129,7 +113,7 @@
         <label> 
           <span>Cadastro de:</span>
             <input type="radio" class="radio" name="cadastro" value="a" required="required"/> Aluno
-            <input type="radio" class="radio" name="cadastro" value="p"/> Professor
+            <input type="radio" class="radio" name="cadastro" value="p"  /> Professor
         </label>
         
         <label><span>Cep:</span>
@@ -179,8 +163,31 @@
               <input type="submit" class="button" value="Cadastrar-me" />
               <input type="reset" class="button" value="Limpar dados" />
         </label> 
+     
       </div>
-    </form>
-      </div>
+
+      <div id='cssmenu'>
+          <ul>
+             <li><a href='are.coordenador.html'>          <span>Home</span></a></li>
+             <li class='active has-sub'><a href='#'>      <span>Area do Coordenador</span></a>
+                <ul>
+                   <li class='has-sub'><a href='#'>       <span>Coordenador(a) ...... </span></a>
+                      <ul>
+                        <li><a href='cadastro_aluno_professor.html'>  <span>Cadastro de Alunos e professores</span></a></li>
+                        <li class='last'><a href='#'>                 <span>....</span></a></li>
+                        <li class='last'><a href='#'>                 <span>....</span></a></li>
+                      </ul>
+                   </li>
+               
+                </ul>
+             </li>
+             <li class='last'><a href=''>                             <span>Contato faculdade</span></a></li>
+          </ul>
+          </div>
+
+          <form>
+
+
+
   </body>
 </html>

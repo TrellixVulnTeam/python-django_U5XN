@@ -17,19 +17,18 @@ img{
 
 .area_aluno{
 	background:url(../img/fundo-login.jpg) no-repeat;
-	height: 800px;
+	height: 600px;
 	width: 100%;
 	opacity: 0.9;
 	margin: 0;
 	padding: 0px;
 }
-
 /*CONFIGURACAO DO MENU*/
 @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300);
 #cssmenu {
   position: relative;
   margin: 0;
-  margin-top: -690px;
+  margin-top: -580px;
   font-family: 'Roboto Condensed';
   line-height: 1;
   width: 250px;
