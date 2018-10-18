@@ -1,0 +1,114 @@
+body{ 
+	font:100% normal Arial, Helvetica, sans-serif;
+}
+
+form,input,select,textarea{margin:0; padding:0; color:#d6d6d6;}
+
+div.box {
+    margin:0 auto;
+    margin-top: -50px;
+    width:700px;
+	left:;
+    background:#222222;
+    position:relative;
+    top:50px;
+    border:15px solid #222222;
+	border-radius: 5px;
+}
+div.box h3 {
+	color:#bbbbbb;
+	font-size:20px;
+    padding:0px 5px;
+	
+}
+div.box h1 { 
+    color:#ffffff;
+    font-size:20px;
+    text-transform:uppercase;
+    padding: 0px 0 0px 10px;
+}
+
+
+div.box label {
+	
+    width:100%;
+    display: block;
+    background:#1C1C1C;
+    border-top:1px solid #262626;
+	border-radius:5px;
+    padding:10px 0 5px 0;
+}
+
+div.box label span {
+	
+    display: block;
+    color:#bbbbbb;
+    font-size:14px;
+    float:left;
+    width:120px;
+    text-align:right;
+    padding:3px 35px 0 0;
+	
+}
+
+div.box .input_text {
+	
+    padding:8px 40px;
+    width:350px;
+    background:#262626;
+    border-bottom: 1px double #171717;
+    border-top: 1px double #171717;
+    border-left:1px double #333333;
+    border-right:1px double #333333;
+	border-radius: 5px;
+}
+div.box .ddd {
+
+    padding:8px 20px;
+    width:20px;
+    background:#262626;
+    border-bottom: 1px double #171717;
+    border-top: 1px double #171717;
+    border-left:1px double #333333;
+    border-right:1px double #333333;
+	border-radius: 5px;
+}
+div.box .telefones {
+    padding:8px 20px;
+    width:190px;
+    background:#262626;
+    border-bottom: 1px double #171717;
+    border-top: 1px double #171717;
+    border-left:1px double #333333;
+    border-right:1px double #333333;
+	border-radius: 5px;
+}
+
+div.box .button{
+	
+	font-weight:bold;
+	font-size:17px;
+    margin:0 0 10px 0;
+    padding:10px 5px;
+    background:blue;
+    border:0px;
+    position: relative;
+    top:0px;
+    left:155px;
+    width:130px;
+    border-bottom: 1px double blue;
+	border-radius:5px;
+
+	}
+    div.box .button:hover{
+        background: grey;
+        border: 1px solid grey;
+
+    }
+	div.box p {
+		color:white;
+		font-size:18px;
+		padding:0px 5px;
+	   
+		
+	}

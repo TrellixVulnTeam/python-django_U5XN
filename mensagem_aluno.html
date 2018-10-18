@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title></title>
+    <title>Projeto LMS</title>
     <link rel="icon" href="img/icon.png">
-    <link rel="stylesheet" type="text/css" href="css/area_aluno.css">
+    <link rel="stylesheet" type="text/css" href="css/mensagem_aluno.css">
+    <link rel="stylesheet" type="text/css" href="cadastro.css">
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,9 +16,44 @@
       <div class="sub">
           <img src="img/logo_sub.png">
       </div>
+
+
       <div class="area_aluno">
       <br>
-      <div class="fundo_conteudo">
+          <form>
+          <div class="box">
+            <label> 
+              <h1>Enviar mensagem</h1>
+            </label>
+            
+        <label>
+        <h3>Insira os dados abaixo:</h3>
+          <span>RA do aluno:</span>
+          <input  type="text" class="input_text" name="nome" id="nome" required="required"  />
+        </label>
+      
+        <label> 
+          <span>Departametos:</span>
+              <select class="input_text">
+                <option value=""></option>
+                <option value="">...</option>
+                <option value="">...</option>
+                <option value="">...</option>
+              </select>
+        </label>
+        
+        <label>
+          <span>Digite sua mensagem:</span>
+          <textarea class="input_text"></textarea>
+        </label>        
+        
+        <label>
+              <input type="submit" class="button" value="Enviar " />
+              <input type="reset" class="button" value="Limpar dados" />
+        </label> 
+      </div>
+    </form>
+      </div>
          
 
 
@@ -42,7 +78,7 @@
              <li><a href='#'><span>SmartClass</span></a></li>
              <li class='last'><a href='' ><span>Contato faculdade</span></a></li>
           </ul>
-      </div>
+          </div>
 
       </div>
   </body>
