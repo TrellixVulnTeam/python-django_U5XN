@@ -1,0 +1,28 @@
+body {
+  background: #f2f2f2;
+  text-align: justify;
+}
+.categorias p{
+  background: grey;
+  width: 100%;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+ }
+.categorias{
+  border: 1px solid black; 
+   width: 350px;
+   margin-left: 700px;
+   margin-top: -60px;
+   height: 80px;
+   border-radius: 5px;
+ }
+ .categorias a{
+   padding: 5px;
+   color: grey;
+ }
+ .categorias a:hover{
+   text-decoration: none;
+   color: black;
+ }

@@ -1,55 +1,49 @@
-.conteudo_listacurso{
-	background: #e6ecff;
-	width: 100%;
-	height: 1000px;
-}
 
-.cursos{
-	background-color: black;
-	width: 1200px;
-	height: 80%;
-	margin-top: 20px;
-	margin-left: 50px;
-	padding: 1px;
-	border-radius: 5px;
-}
+	hr{
+	  background: black;
+	  margin-top: -3px;
+	}
+	          
+	.centro , .inicio , .direita{  
+	  border: 2px solid #999999;
+	  width: 310px;
+	  height: 110px;
+	  border-radius: 4px;
+	  background: #f2f2f2;
+
+	}
+
+	.centro:hover,.inicio:hover,.direita:hover{
+	  background: #bfbfbf;
+	  border: 2px solid #999999;
+	}
+	.centro i,.inicio i,.direita i{
+	  font-size: 50px;
+	}
+           
+	.centro i, p, .inicio i, p , .direita i, p{
+	  text-align: center;
+
+	}
+          
+    .centro i, .inicio i, .direita i {
+	margin-left: 120px;
+	margin-top: 5px;
+           }
+	.centro, .inicio, .direita p{
+	  font-size: 18px;
+	  margin-top: 5px;
+	  font-weight: bold;
+	}
+
+	.inicio{
+	  margin-left: 375px;
+	  margin-top: -108px;
+	}
 
 
-.cursos h1{
-	color: white;
-	text-align: center;
-	background: #001a33;
-	width: 100%;
-	font-family: 'Noto Sans', sans-serif;
-}
-
-.cursos li a:hover {
-	background: blue;
-	border:1px solid blue;
-	font-weight: bold;
-}
-
-.cursos li a{
-	color: black;
-	list-style-type: none;
-	text-decoration: none;
-	font-size: 23px;
-	font-family: 'Nunito Sans', sans-serif;
-	margin:5px;
-}
-.cursos li{
-	  display:inline;
-}
-.cursos a{
-	border:3px solid white;
-	background: white;
-	border-radius: 3px;
-
-}
-.cursos ul{
-	list-style-type:none;
-	text-align: center; 
-	list-style:none;
-    margin-left:-57px;
-
-}
+	.direita{
+	  margin-left: 750px;
+	  margin-top: -108px;
+	}
+     

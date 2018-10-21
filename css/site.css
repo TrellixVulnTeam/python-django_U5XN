@@ -60,70 +60,30 @@
     transform: scale(0.8);
 }
 
-a h4:hover{
-	text-decoration: underline; 
-	color: blue;
-
-}
-hr{
-	margin-left: 500px;
-	margin-top: -125px;
-	background-color:  white;
-	size: 200;
-	width:1px;
-}
-
-.redes_sociais {
-	width: 100px; 
-	height:100px;
-	margin-left: 450px;
-	margin-top: -145px;
-}
-
-.redes_sociais hr{
-	margin-top: -125px;
-}
-
-h4{
-	color: white;
-	margin-left: 120px;
-	font-size: 17px;
-	margin-top: -27px;
-	font-family: 'Archivo Narrow', sans-serif;
-}
-
-/* RODAPE */
 
 .rodape{
+	padding: 10px;
 	background: black;
 	width: 100%;
-	height: 160px;
-}
-.rodape img{
-	width: 25%;
-	margin-top: 20px;
-	margin-left: 80px;
-
-}
-.logo_faculdade h3{
-	color: white;
-	font-size: 13px;
-	margin-left: 120px;
-}
-.rodape p{
+	height:170px;
 	text-align: center;
 	color: white;
-	margin-top: -80px;
-	font-size: 15px;
-	font-family: 'Noto Sans', sans-serif;
-	margin-left: 1000px;
 }
-.rodape a{
-	text-decoration: none;
+.rodape i{
+	margin:4px;
 	color: white;
+	padding: 10px;
 }
-
-.rodape a:hover {
-	text-decoration: underline; 
-	color: blue;
+.rodape p a{
+	margin:10px;
+	color: white;
+	font-size: 20px;
+	text-decoration: none;
+}
+.rodape p a:hover{
+	color: grey;
+}
+.rodape h3{
+	margin-top: 10px;
+	font-size: 15px;
 }
