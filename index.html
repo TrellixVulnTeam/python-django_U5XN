@@ -9,90 +9,86 @@
 		<link rel="stylesheet" type="text/css" href="css/index.css">
 		<link rel="stylesheet" type="text/css" href="css/slide.css">
 		<link rel="icon" href="img/icon.png" >
+		<script type="text/javascript" src="script/home.js" defer></script>
 
 		<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Archivo+Narrow" rel="stylesheet">
 
+		
+		<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
+
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-	
+
+		
 	</head>
 	<body>
 		<div class="cabecalho">		
 			<div class="menu">
 				<ul>
-					<li><a href="index.html">			Home</a></li>
-					<li><a href="user_geral/lista_curso.html">		Lista de Cursos</a></li>
-					<li><a href="user_geral/detalhe_graduacao.html">	Detalhe de Curso</a></li>
-					<li><a href="user_geral/disciplina.html">		Disciplina</a></li>
+					<li><a href="index.html" style="">								Home</a></li>
+					<li><a href="user_geral/lista_curso.html">				Lista de Cursos</a></li>
+					<li><a href="user_geral/detalhe_graduacao.html">		Detalhe de Curso</a></li>
+					<li><a href="user_geral/disciplina.html">				Disciplina</a></li>
 					<li><a href="user_geral/noticias_tecnologia.html">		Notícias</a></li>
 				</ul>
-				<img src="img/logo.png">
+				<img  src="img/logo.png">
 				<form method="POST" action="login.html">
-					<button class="botao" type="submit">Login</button>
+					<button  class="botao" type="submit">Login</button>
 				</form>
 			</div>
 		</div>
-
-		<div class="conteudo_home">
-			<br>
-			<!-- Slideshow container -->
-			<div class="slideshow-container">
-			  <!-- Full-width images with number and caption text -->
-			  <div class="mySlides fade">
-			    <div class="numbertext">1 / 3</div>
-			    <img src="img/gradu.jpg" style="width:100%" height="700px">
-			  </div>
-				
-			  <div class="mySlides fade">
-			    <div class="numbertext">2 / 3</div>
-			    <img src="img/gradu2.jpg" style="width:100%" height="700px">
-			  </div>
-
-			  <div class="mySlides fade">
-			    <div class="numbertext">3 / 3</div>
-			    <img src="img/chapeus.jpg" style="width:100%" height="700px">
-			  </div>
-			
-			  <!-- Next and previous buttons -->
-			  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-			  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-			</div>
-			<br>
-
-			<!-- The dots/circles -->
-			<div style="text-align:center">
-			  <span class="dot" onclick="currentSlide(1)"></span> 
-			  <span class="dot" onclick="currentSlide(2)"></span> 
-			  <span class="dot" onclick="currentSlide(3)"></span> 
-			</div>
-
-			<br>
-			<div class="secoes">
-				<img src="img/gradu2.jpg">
-				<img src="img/gradu2.jpg">
-				<img src="img/gradu2.jpg">
-			</div>
-			
-			<a href="lista_curso.html"><button class="botao_graduacao" name="graducao">Graduação</button></a>
-			<a href="lista_curso.html"><button class="botao_pos" name="pos">Pós e MBA</button></a>
-			<a href="lista_curso.html"><button class="botao_tecnico" name="tecnico">Técnico</button></a>
 		
-		</div>
-		<script type="text/javascript" src="script/slide.js"></script>
-		 
+		<div class="hero-image" id="inicio">
+		  <div class="hero-text">
+		    <h1>FACULDADE IMPACTA DE TECNOLOGIA</h1>
+		    <p >A Faculdade Impacta é altamente reconhecida por sua atuação no mercado da educação, o que comprova o compromisso da Instituição com o ensino de qualidade e a dedicação do Grupo Impacta em transformar a sociedade através da tecnologia. Desta maneira, ao longo dos anos a Faculdade Impacta tem recebido prêmios e reconhecimentos que são resultados do trabalho contínuo de professores e funcionários e da determinação de seus alunos.<br><br>
+		    
+		    <center><button><a href="#cursos" style="font-family: 'Exo 2', sans-serif;" >Nossos Cursos</a></button></center>
 			
-	<div class="rodape">
-			<br>
-	        <h1><a href="https://www.youtube.com/user/GrupoImpacta"><i  class="fab fa-youtube"></i></a>
-	        <a href="https://www.instagram.com/faculdadeimpacta/?hl=pt-br"><i class="fab fa-instagram" ></i></a>
-			<a href="https://twitter.com/facimpacta"><i class="fab fa-twitter-square"></i></a>
-        	<a href="https://pt-br.facebook.com/FacImpacta/"><i class="fab fa-facebook"></i></h1></a>
-			
-        	<p><a href="">FAQ  </a>  
-	        	<a href="">Política de Privacidade  </a>      
-	          	<a href="">Termos e Condições</a>
-	        </p>
-			<h3>© 2018 Impacta. Todos os direitos reservados.</h3> 
+		  </div>
 		</div>
-	</body>
-</html>
+				
+				<div class="meio" id="cursos">
+				<br>
+				<h1>CONHEÇA NOSSOS CURSOS</h1>
+				<p >
+					Considerada uma das melhores faculdades com foco em tecnologia do País, a Faculdade Impacta oferece cursos de Graduação, Pós-Graduação e MBA e cursos técnicos. Conheça quais são as áreas de conhecimento que a Impacta aborda e saiba um pouco mais sobre cada curso:	
+
+				</p>
+				<div class="graduacao" >
+					<h1 style="font-size: 20px;margin-top: 130px;">Graduação<br>
+					Cursos na área de Tecnologia, Gestão e Design</h1>	
+				</div>
+
+
+				<div class="posmba">
+					<h1 style="font-size: 20px;margin-top: 130px;">Pós e MBA<br>
+					Diferentes áreas de conhecimento para você crescer no mercado</h1>
+				</div>
+
+
+				<div class="tecnico">
+					<h1 style="font-size: 20px;margin-top: 130px;">Técnico<br>
+					Acelere sua inserção no mercado de trabalho com cursos de qualidade</h1>
+				</div>
+				
+				</div>
+
+				<div class="contato">
+					<br>
+					<h1>Vamos entrar em contato!</h1>
+					<hr width="100">
+					<p style="font-family: 'Exo 2', sans-serif;line-height: 30px;">Pronto para começar sua faculdade conosco? Isso é ótimo!<br> Ligue para nós ou envie-nos um e-mail e entraremos em contato o mais breve possível!</p>
+
+					<i id="telefone" class="fas fa-phone-square"></i>
+					
+					<i id="email" class="fas fa-envelope" style="margin-left: 50px;"></i>
+
+					<i id="endereco" class="fas fa-home" style="margin-left: 50px;"></i>
+				</div>
+
+				<a href="#inicio"><i class="fas fa-angle-up" ></i></a>
+				
+		</body>
+	</html>
