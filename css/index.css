@@ -78,6 +78,10 @@ i:hover{
 	height: 100%;
 	width: 100%;
 	margin-top:-6px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 
 }
 .meio p{
@@ -120,13 +124,13 @@ span{
 }
 .posmba{
 	margin-left: 510px;
-	margin-top: -250px;
+	margin-top: -295px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.impacta.edu.br/themes/wc_agenciar3/images/mba.jpg");
 }
 
 .tecnico{
 	margin-left: 820px;
-	margin-top: -250px;
+	margin-top: -295px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.impacta.edu.br/themes/wc_agenciar3/images/tecnico.jpg");
 }
 
@@ -157,9 +161,7 @@ span{
     color: white;
 }
 .inicio{
-	background-image: url(https://www.impacta.edu.br/blog/wp-content/uploads/2018/08/banner-blog-1.png);
-	    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.impacta.edu.br/blog/wp-content/uploads/2018/08/banner-blog-1.png");
-
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.impacta.edu.br/blog/wp-content/uploads/2018/08/banner-blog-1.png");
 	background-repeat:no-repeat; 
 	width: 100%;
 	color: white;
