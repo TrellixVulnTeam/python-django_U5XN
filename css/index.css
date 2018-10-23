@@ -23,7 +23,7 @@ h1{
 	font-size: 15px;
 	text-transform: uppercase;
 }
-..hero-image button:hover{
+.hero-image button:hover{
 	background: black;
 }
 .contato{
