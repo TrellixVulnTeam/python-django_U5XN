@@ -17,7 +17,7 @@ def detalhe_graduacao(request):
     return render(request, "user_geral/detalhe_graduacao.html")
 
 def detalhe_posmba(request):
-    return render(request, "user_geral/lisdetalhe_posmba.html")
+    return render(request, "user_geral/detalhe_posmba.html")
 
 def disciplina(request):
     return render(request, "user_geral/disciplina.html")
@@ -53,6 +53,8 @@ def cadastro_aluno_professor(request):
 
 def area_coordenador(request):
     return render(request, "user_coordenador/area_coordenador.html")
+
+
 #aluno
 def area_aluno(request):
     return render(request, "user_aluno/area_aluno.html")
@@ -68,9 +70,3 @@ def matricula_curso(request):
 
 def mensagem(request):
     return render(request, "user_aluno/mensagem.html")
-
-
-
-
-
-

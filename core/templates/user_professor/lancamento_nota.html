@@ -2,22 +2,27 @@
 <html>
   <head>
     <title>Projeto LMS</title>
-    
-    <link rel="icon" href="static/img/icon.png">
-    <link rel="stylesheet" type="text/css" href="static/css/cadastro_aluno_professor.css">
-    <link rel="stylesheet" type="text/css" href="static/css/formulario.css">
-    
+    {% load static %}
+
+
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
+    <link rel="icon" href="{% static 'img/icon.png' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/cadastro_aluno_professor.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/formulario.css' %}">
+    
+    
     <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-    <script src="static/script/script.js" ></script>
+    <script src="{% static 'script/script.js' %}"  defer></script>
+    <script src="{% static 'script/home.js' %}"  defer></script>
+
   </head>
   
   <body>
       <div class="sub">
-          <img src="static/img/logo_sub.png">
+          <img src="{% static 'img/logo_sub.png' %}">
       </div>
       <div class="area_aluno">
       <br>
@@ -103,9 +108,8 @@
                 </ul>
              </li>
              <li><a href='smartclass'>                                <span>SmartClass</span></a></li>
-             <li class='last'><a href=''>                                  <span>Contato faculdade</span></a></li>
-            
-             <li><a class="last" href='static/index'>                     <span> Sair da conta</span></a></li>
+             <li class='last'><a href='' id="telefone">               <span>Contato faculdade</span></a></li>
+             <li><a class="last" href='../index'>                     <span> Sair da conta</span></a></li>
 
           </ul>
           </div>

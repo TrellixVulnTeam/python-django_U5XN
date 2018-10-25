@@ -17,7 +17,8 @@ td,th{
 th{
 	text-align: center;
 	background: #f2f2f2;
-} button{
+}
+button{
 	width: 150px;
 	height: 30px;
 	border-radius: 3px;

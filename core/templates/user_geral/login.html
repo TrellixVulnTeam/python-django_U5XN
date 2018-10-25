@@ -3,9 +3,10 @@
 	<head>
 		<title>Projeto LMS</title>
 		<meta charset="utf-8">
-		<link rel="icon" href="static/img/icon.png">
-
-		<link rel="stylesheet" type="text/css" href="static/css/login.css">
+		{% load static %}
+		<link rel="icon" href="{% static 'img/icon.png' %}">
+		<link rel="stylesheet" type="text/css" href="{% static 'css/login.css' %}">
+		
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 	</head>
 	<body>
@@ -21,7 +22,7 @@
 				<input type="password" placeholder="Insira sua senha" name="senha">
 			</div>
 
-			<a href="static/user_aluno/area_aluno"><input type="button" class="btn"  value="Login" name="botao"></a>
+			<a href="area_aluno"><input type="button" class="btn"  value="Login" name="botao"></a>
 		</div>
 
 	</body>
