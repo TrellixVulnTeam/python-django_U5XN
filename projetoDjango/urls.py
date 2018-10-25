@@ -5,6 +5,7 @@ from core.views import *
 
 urlpatterns = [
     path('',index),
+    path('index',index),
     path('admin/', admin.site.urls),
     #geral
     path('user_geral/lista_curso',lista_curso),
