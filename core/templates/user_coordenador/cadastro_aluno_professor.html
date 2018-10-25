@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Projeto LMS</title>
+    
+    <link rel="icon" href="static/img/icon.png">
+    <link rel="stylesheet" type="text/css" href="static/css/cadastro_aluno_professor.css">
+    <link rel="stylesheet" type="text/css" href="static/css/formulario.css">
+    
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <script src="static/script/script.js" ></script>
+
+
+
+    <!-- Adicionando JQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+
+    <!-- Adicionando Javascript -->
+    <script type="text/javascript" >
+
+        $(document).ready(function() {
+
+            function limpa_formulário_cep() {
+                // Limpa valores do formulário de cep.
+                $("#rua").val("");
+                $("#bairro").val("");
+                $("#cidade").val("");
+                $("#uf").val("");
+                $("#ibge").val("");
+            }
+            
+            //Quando o campo cep perde o foco.
+            $("#cep").blur(function() {
+
+                //Nova variável "cep" somente com dígitos.
+                var cep = $(this).val().replace(/\D/g, '');
+
+                //Verifica se campo cep possui valor informado.
+                if (cep != "") {
+
+                    //Expressão regular para validar o CEP.
+                    var validacep = /^[0-9]{8}$/;
+
+                    //Valida o formato do CEP.
+                    if(validacep.test(cep)) {
+
+                        //Preenche os campos com "..." enquanto consulta webservice.
+                        $("#rua").val("...");
+                        $("#bairro").val("...");
+                        $("#cidade").val("...");
+                        $("#uf").val("...");
+                        $("#ibge").val("...");
+
+                        //Consulta o webservice viacep.com.br/
+                        $.getJSON("https://viacep.com.br/ws/"+ cep +"/json/?callback=?", function(dados) {
+
+                            if (!("erro" in dados)) {
+                                //Atualiza os campos com os valores da consulta.
+                                $("#rua").val(dados.logradouro);
+                                $("#bairro").val(dados.bairro);
+                                $("#cidade").val(dados.localidade);
+                                $("#uf").val(dados.uf);
+                                $("#ibge").val(dados.ibge);
+                            } //end if.
+                            else {
+                                //CEP pesquisado não foi encontrado.
+                                limpa_formulário_cep();
+                                alert("CEP não encontrado.");
+                            }
+                        });
+                    } //end if.
+                    else {
+                        //cep é inválido.
+                        limpa_formulário_cep();
+                        alert("Formato de CEP inválido.");
+                    }
+                } //end if.
+                else {
+                    //cep sem valor, limpa formulário.
+                    limpa_formulário_cep();
+                }
+            });
+        });
+
+    </script>
+  </head>
+  
+  <body>
+      <div class="sub">
+          <img src="static/img/logo_sub.png">
+      </div>
+      <div class="area_aluno">
+      <br>
+      
+          <div class="box">
+            <label> 
+              <h1>Criar minha conta</h1>
+            </label>
+            
+        <label>
+        <h3>Insira os seus dados pessoais abaixo:</h3>
+          <span>Nome completo:</span>
+          <input  type="text" class="input_text" name="nome" id="nome" required="required"  />
+        </label>
+
+
+        <label> 
+          <span>Cadastro de:</span>
+            <input type="radio" class="radio" name="cadastro" value="a" required="required"/> Aluno
+            <input type="radio" class="radio" name="cadastro" value="p"  /> Professor
+        </label>
+        
+        <label><span>Cep:</span>
+        <input name="cep" type="text" class="telefones" id="cep" value="" size="10" required="required" 
+             onblur="pesquisacep(this.value);" /></label>
+        
+        <label>
+        <span>Rua:</span>
+        <input name="rua" class="input_text" type="text" id="rua" size="60" />
+        </label>
+        
+        <label>
+        <span>Bairro:</span>
+        <input name="bairro" class="input_text" class="telefones" type="text" id="bairro" size="40" />
+        </label>
+        
+        <label><span>Cidade:</span>
+        <input name="cidade" type="text" class="telefones" id="cidade" size="40" /></label>
+
+        <label><span>Estado:</span>
+        <input name="uf" type="text" class="telefones" id="uf" size="2" />
+      </br>
+        
+        <label> 
+          <span>Sexo:</span>
+            <input type="radio" class="radio" name="sexo" value="M" required="required"/> Masculino
+            <input type="radio" class="radio" name="sexo" value="F"/> Feminino
+        </label>
+
+        <label> 
+          <span>Data de nascimento:</span>
+            <input type="date" class="input_text" name="data" id="data" />
+        </label>
+        
+        <label>
+          <span>Email:</span>
+          <input type="email" class="input_text" name="email" id="email" />
+         </label>
+        <label>
+
+          <span>Telefone/Celular:</span>
+          <input type="text" class="ddd" name="ddd" maxlength="2"  /> -
+          <input type="text" class="telefones" name="telefone" id="telefone" maxlength="9" required="required" pattern="[0-9]+$" />
+        </label>
+
+        <label>
+              <input type="submit" class="button" value="Cadastrar-me" />
+              <input type="reset" class="button" value="Limpar dados" />
+        </label> 
+     
+      </div>
+
+      <div id='cssmenu'>
+          <ul>
+             <li><a href='are.coordenador.html'>          <span>Home</span></a></li>
+             <li class='active has-sub'><a href='#'>      <span>Area do Coordenador</span></a>
+                <ul>
+                   <li class='has-sub'><a href='#'>       <span>Coordenador(a) ...... </span></a>
+                      <ul>
+                        <li><a href='cadastro_aluno_professor.html'>  <span>Cadastro de Alunos e professores</span></a></li>
+                        <li class='last'><a href='#'>                 <span>....</span></a></li>
+                        <li class='last'><a href='#'>                 <span>....</span></a></li>
+                      </ul>
+                   </li>
+               
+                </ul>
+             </li>
+             <li class='last'><a href=''>                    <span>Contato faculdade</span></a></li>
+             <li class='last'><a href='static/index.html'>       <span> Sair da conta</span></a></li>
+
+          </ul>
+          </div>
+
+          <form>
+
+
+
+  </body>
+</html>

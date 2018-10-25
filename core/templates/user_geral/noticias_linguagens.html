@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html >
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Projeto LMS</title>
+
+    <link rel="icon" href="static/img/icon.png">
+
+  
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous"></head>
+
+
+    
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script><!-- Custom styles for this template -->
+    <link href="static/css/noticias.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="static/css/site.css">
+
+  </head>
+
+  <body>
+     <div class="cabecalho">   
+      <div class="menu">
+        <ul>
+          <li><a href="static/index">                 Home</a></li>
+          <li><a href="lista_curso">           Lista de Cursos</a></li>
+          <li><a href="detalhe_graduacao">     Detalhe de Curso</a></li>
+          <li><a href="disciplina">            Disciplina</a></li>
+          <li><a href="noticias_linguagens">              Notícias</a></li>
+        </ul>
+        <img  style="margin-top: -69px;" src="static/img/logo.png">
+        <form method="POST" action="login">
+          <button class="botao" type="submit" style="margin-top: -69px;">Login</button>
+        </form>
+      </div>
+    </div>
+	
+	  <!-- Page Content -->
+    <div style="background: white;margin-top: 20px;" class="container" >
+
+      <div class="row">
+
+        <!-- Post Content Column -->
+        <div class="col-lg-8">
+
+          <!-- Title -->
+          <h1 class="mt-4" style="text-align: justify;font-size: 25px; font-weight: bold;text-transform: uppercase;">Linguagens de programação Front-End</h1>
+
+          <!-- Author -->
+          <p class="lead">
+            Postado por: 
+            <a href="#">Faculdade Impacta de Tecnologia</a>
+          </p>
+
+          <hr>
+
+          <!-- Date/Time -->
+          <p>Postado em 1 de janeiro, 2018 as 12:00 </p>
+
+          <hr>
+           <h1 class="mt-4" style=" font-weight: bold; font-size: 23px;" id="javascript">Até onde vai o poder do JavaScript?</h1>
+          <!-- Preview Image -->
+          <img class="img-fluid rounded" src="static/img/js.png" width="400" alt="">
+
+          <hr style="width: 1000px">
+
+          <!-- Post Content -->
+
+          <p style="width: 1000px">Fazendo uma breve introdução à linguagem, ela foi criada no ano 1995 por Brendan Eich. Quando eu comecei a trabalhar com web, a função do JavaScript era muito clara: validar formulários, sendo essas validações de campos obrigatórios ou não; máscaras em campos; valores válidos para um campo – como e-mail e CPF – e por aí vai. 
+          Havia vários formatos de monitores no mercado nessa época, mas os sites ainda não eram responsivos. Então decidi me arriscar e fazer um site que abrisse nos três tipos de monitores mais vendidos naquele tempo (800×600, 1024×760 e 1280×1024) e consegui graças ao JavaScript, mas seu uso era bem limitado e o resultado sempre ficava nesse “mais do mesmo”. 
+          Naquela mesma época, a linguagem ganhou o poder do Ajax, e as páginas começaram a fazer requisições em background para o servidor, aumentando assim, o poder de interação do usuário com a página. Também surgiram os frameworks JavaScript – sendo o JQuery um dos pioneiros e mais populares. 
+          Em 2009 um visionário chamado Ryan Dahl pensou: e se a linguagem usada no lado do cliente também pudesse ser usada no lado do navegador? Foi assim que surgiu o node.js, um interpretador JavaScript para rodar do lado do servidor. 
+          Desde então, a linguagem tem crescido mais e mais, atingindo vários níveis. Nem os mais otimistas que olhavam para aquela linguagem “pobre e feinha”, nascida para ser usada no lado cliente, bem no início da web, aceitariam que ela chegaria. E hoje podemos fazer várias coisas incríveis com JavaScript. 
+          </p>
+
+
+          <h1 class="mt-4" style=" font-weight: bold; font-size: 23px;" id="html">HTML</h1>
+
+          <img class="img-fluid rounded" src="static/img/html.png" width="400" alt="">
+
+
+          <p style="width: 1000px"><br>
+          A invenção do HTML é creditada ao físico britânico Tim Berners Lee, que também desenvolveu a World Wide Web, ou seja, a Internet como a conhecemos. Enquanto a WWW servia como protocolo para conectar os computadores ao redor do mundo, o HTML era a linguagem em comum utilizada para conseguir apresentar o conteúdo.
+          A ideia original de todo o projeto de internet era facilitar a comunicação dos pesquisadores nos mais renomados institutos de pesquisa do mundo, como o CERN (Conseil Européen pour la Recherche Nucléaire – Conselho Europeu de Pesquisa Nuclear), onde Tim Lee desenvolveu o projeto. Lá foi criado o primeiro site do mundo, o www.info.cern.ch.
+          Se você já acessou algum site mais antigo, pode notar que os elementos presentes são bem simples. Sem muitas imagens, as páginas parecem ser mais estáticas, sem muitas opções como nos sites atuais. Isso porque o HTML foi se desenvolvendo muito durante esses anos todos, passando de sua versão original até chegar ao HTML 5, a versão mais recente da linguagem.
+          </p>
+
+
+          <h1 class="mt-4" style=" font-weight: bold; font-size: 23px;" id="css">CSS</h1>
+
+          <img class="img-fluid rounded" src="static/img/CSS.png" width="400" alt="">
+
+
+          <p style="width: 1000px"><br>
+            CSS é o acrônimo de Cascading Style Sheets que em português seria algo como “folhas de estilo em cascata”. É uma especificação que define como os elementos que compõem uma página, um documento ou aplicação Web serão exibidos.
+            Quando falamos de acessibilidade, performance e manutenção, tem-se como princípio fazer separação do conteúdo, da interatividade e da apresentação de um site ou aplicação web. O CSS desempenha um grande papel na camada da apresentação.
+            A forma certa de publicar um documento web é seguindo uma estrutura semântica. O CSS traz toda a informação do layout, isto é, cores, posicionamento, fontes, tamanhos e imagens de fundo, enquanto o HTML deve fornecer uma “arquitetura” para o conteúdo. O suporte a CSS pelos navegadores de hoje é bem sólido, mas teve um início tímido, sendo inicialmente suportado pelo navegador Netscape.A primeira versão da especificação foi lançada em 1996 e uma segunda versão publicada em 1998 mas até 2009 nem todos os navegadores em uso suportavam plenamente seus recursos. Uma nova versão da especificação está em desenvolvimento e felizmente os navegadores mais recentes já estão testando-a.
+            Como o navegador Internet Explorer demorou a suportar todos os recursos do CSS, web developers e web designers utilizavam tabelas para montar a estrutura das páginas e toda a informação de estilo ficava junto do conteúdo. Com a melhoria das velocidades de internet (em tempos de conexão discada), foi possível adotar layouts mais complexos e modernos, ainda usando tabelas. Criou-se um mito de que projetos utilizando CSS eram muito simples, limpos e  “quadrados”. Este mito foi desvendado 
+          </p>
+
+
+          <hr style="width: 1000px">
+
+          <!-- Comments Form -->
+          <div class="card my-4">
+            <h5 class="card-header">Inserir comentario:</h5>
+            <div class="card-body">
+              <form>
+                <div class="form-group">
+                  <textarea class="form-control" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+              </form>
+            </div>
+          </div>
+
+          <!-- Single Comment -->
+          <div class="media mb-4">
+            <img class="d-flex mr-3 rounded-circle" width="60" src="https://cdn.icon-icons.com/icons2/1343/PNG/512/man_87660.png" alt="">
+            <div class="media-body">
+              <h5 class="mt-0">Derick Plens </h5>
+              Muito Boommm.
+            </div>
+          </div>
+
+          <!-- Comment with nested comments -->
+          <div class="media mb-4">
+            <img class="d-flex mr-3 rounded-circle" width="60" src="https://lh3.googleusercontent.com/-YzNfL1_rRf0/VCEVeVDhHdI/AAAAAAAAByI/NrgIUTJEHh0/w530-h530-n-rw/Icone-Amigo_Homem.png" alt="">
+            <div class="media-body">
+              <h5 class="mt-0">Igor perez</h5>
+              Não importa o tipo de curso, se é uma graduação, pós-graduação, especialização, um curso livre ou novos idiomas, invista sempre na sua capacitação profissional e mostre o seu diferencial no mercado de trabalho
+
+            </div>
+          </div>
+
+        </div>
+
+       
+          <!-- Categories Widget -->
+          <div  style="height:150px; width:300px; " class="card my-4">
+            <h5 class="card-header">Categorias</h5>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-lg-6">
+                  <ul class="list-unstyled mb-0">
+                    <li >
+                      <a href="noticias_faculdade" >Faculdade </a>
+                    </li>
+                    <li>
+                      <a href="noticias_tecnologia">Tecnologia</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-6">
+                  <ul class="list-unstyled mb-0">
+                    <li>
+                      <a href="#javascript">JavaScript</a>
+                    </li>
+                    <li>
+                      <a href="#css">CSS</a>
+                    </li>
+                     <li>
+                      <a href="#html">HTML </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="rodape" style="margin-top: 20px;">
+          <h1>
+            <a href="https://www.youtube.com/user/GrupoImpacta">
+            <i  class="fab fa-youtube"></i></a>
+            
+            <a href="https://www.instagram.com/faculdadeimpacta/?hl=pt-br">
+            <i class="fab fa-instagram" ></i></a>
+            
+            <a href="https://twitter.com/facimpacta">
+            <i class="fab fa-twitter-square"></i></a>
+            
+            <a href="https://pt-br.facebook.com/FacImpacta/">
+            <i class="fab fa-facebook"></i></h1></a>
+
+          <p><a href="">FAQ  </a>  
+            <a href="">Política de Privacidade  </a>      
+              <a href="">Termos e Condições</a>
+          </p>
+      <h3>© 2018 Impacta. Todos os direitos reservados.</h3>
+    </div>
+
+   
+  </body>
+
+</html>
