@@ -26,6 +26,7 @@ urlpatterns = [
     path('user_professor/lancamento_nota', lancamento_nota),
     
     #aluno
+    
     path('user_aluno/area_aluno', area_aluno),
     path('user_aluno/atividade', atividade),
     path('user_aluno/inscricao_curso', inscricao_curso),
