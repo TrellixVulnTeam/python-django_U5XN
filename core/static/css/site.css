@@ -48,7 +48,7 @@
 	background: blue;
 	border-radius: 3px;
 	float: right;
-	margin-top: -50px;
+	margin-top: -70px;
 	font-size: 20px;
 	font-family: 'Noto Sans', sans-serif;
 
@@ -63,17 +63,11 @@
 
 
 .rodape{
-	padding: 10px;
+	padding: 40px;
 	background: black;
 	width: 100%;
-	height:170px;
 	text-align: center;
 	color: white;
-}
-.rodape i{
-	margin:4px;
-	color: white;
-	padding: 10px;
 }
 .rodape p a{
 	margin:10px;
@@ -88,3 +82,69 @@
 	margin-top: 10px;
 	font-size: 15px;
 }
+
+
+.rodape .middle a,i{
+	color: black;
+}
+.rodape .middle{
+  transform: translateY(-10%);
+  width: 100%;
+  text-align: center;
+}
+.rodape .btn{
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  background: #f1f1f1;
+  margin: 10px;
+  border-radius: 50%;
+  box-shadow: 0 5px 15px -5px #00000070;
+  color: #3636db;
+  overflow: hidden;
+  position: relative;
+}
+.rodape .btn i{
+  line-height: 90px;
+  font-size: 30px;
+  margin-top: -23px;
+  transition: 0.2s linear;
+}
+.rodape .btn:hover i{
+  transform: scale(1.3);
+  color: black;
+}
+.rodape .btn::before{
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background: #3498db;
+  transform: rotate(45deg);
+  left: -110%;
+  top: 90%;
+}
+.rodape .btn:hover::before{
+  animation: aaa 0.7s 1;
+  top: -10%;
+  left: -10%;
+}
+@keyframes aaa {
+  0%{
+    left: -110%;
+    top: 90%;
+  }50%{
+    left: 10%;
+    top: -30%;
+  }100%{
+    top: -10%;
+    left: -10%;
+  }
+}
+
+
+
+
+
+
+

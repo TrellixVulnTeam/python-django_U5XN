@@ -16,7 +16,7 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css/site.css' %}">
 
   
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous"></head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
@@ -37,7 +37,8 @@
           <li><a href="disciplina">            Disciplina</a></li>
           <li><a href="noticias_linguagens">              Notícias</a></li>
         </ul>
-        <img  style="margin-top: -69px;" src="{% static 'img/logo.png' %}"">
+        <img  style="margin-top: -69px;" src="{% static 'img/logo.png' %}">
+                                                                           
         <form action="login">
           <button class="botao" type="submit" style="margin-top: -69px;">Login</button>
         </form>
@@ -51,8 +52,7 @@
       }
     </style>
 	
-	  <!-- Page Content -->
-    <div style="background: white;margin-top: 20px;" class="container" >
+	<div style="background: white;margin-top: 20px;" class="container" >
 
       <div class="row">
 
@@ -78,11 +78,11 @@
           <!-- Preview Image -->
           <img class="img-fluid rounded" src="{% static 'img/js.png' %}" width="400" alt="">
 
-          <hr style="width: 1000px">
+          <hr>
 
           <!-- Post Content -->
 
-          <p style="width: 1000px">Fazendo uma breve introdução à linguagem, ela foi criada no ano 1995 por Brendan Eich. Quando eu comecei a trabalhar com web, a função do JavaScript era muito clara: validar formulários, sendo essas validações de campos obrigatórios ou não; máscaras em campos; valores válidos para um campo – como e-mail e CPF – e por aí vai. 
+          <p>Fazendo uma breve introdução à linguagem, ela foi criada no ano 1995 por Brendan Eich. Quando eu comecei a trabalhar com web, a função do JavaScript era muito clara: validar formulários, sendo essas validações de campos obrigatórios ou não; máscaras em campos; valores válidos para um campo – como e-mail e CPF – e por aí vai. 
           Havia vários formatos de monitores no mercado nessa época, mas os sites ainda não eram responsivos. Então decidi me arriscar e fazer um site que abrisse nos três tipos de monitores mais vendidos naquele tempo (800×600, 1024×760 e 1280×1024) e consegui graças ao JavaScript, mas seu uso era bem limitado e o resultado sempre ficava nesse “mais do mesmo”. 
           Naquela mesma época, a linguagem ganhou o poder do Ajax, e as páginas começaram a fazer requisições em background para o servidor, aumentando assim, o poder de interação do usuário com a página. Também surgiram os frameworks JavaScript – sendo o JQuery um dos pioneiros e mais populares. 
           Em 2009 um visionário chamado Ryan Dahl pensou: e se a linguagem usada no lado do cliente também pudesse ser usada no lado do navegador? Foi assim que surgiu o node.js, um interpretador JavaScript para rodar do lado do servidor. 
@@ -95,7 +95,7 @@
           <img class="img-fluid rounded" src="{% static 'img/html.png' %}" width="400" alt="">
 
 
-          <p style="width: 1000px"><br>
+          <p><br>
           A invenção do HTML é creditada ao físico britânico Tim Berners Lee, que também desenvolveu a World Wide Web, ou seja, a Internet como a conhecemos. Enquanto a WWW servia como protocolo para conectar os computadores ao redor do mundo, o HTML era a linguagem em comum utilizada para conseguir apresentar o conteúdo.
           A ideia original de todo o projeto de internet era facilitar a comunicação dos pesquisadores nos mais renomados institutos de pesquisa do mundo, como o CERN (Conseil Européen pour la Recherche Nucléaire – Conselho Europeu de Pesquisa Nuclear), onde Tim Lee desenvolveu o projeto. Lá foi criado o primeiro site do mundo, o www.info.cern.ch.
           Se você já acessou algum site mais antigo, pode notar que os elementos presentes são bem simples. Sem muitas imagens, as páginas parecem ser mais estáticas, sem muitas opções como nos sites atuais. Isso porque o HTML foi se desenvolvendo muito durante esses anos todos, passando de sua versão original até chegar ao HTML 5, a versão mais recente da linguagem.
@@ -107,7 +107,7 @@
           <img class="img-fluid rounded" src="{% static 'img/css.png' %}" width="400" alt="">
 
 
-          <p style="width: 1000px"><br>
+          <p ><br>
             CSS é o acrônimo de Cascading Style Sheets que em português seria algo como “folhas de estilo em cascata”. É uma especificação que define como os elementos que compõem uma página, um documento ou aplicação Web serão exibidos.
             Quando falamos de acessibilidade, performance e manutenção, tem-se como princípio fazer separação do conteúdo, da interatividade e da apresentação de um site ou aplicação web. O CSS desempenha um grande papel na camada da apresentação.
             A forma certa de publicar um documento web é seguindo uma estrutura semântica. O CSS traz toda a informação do layout, isto é, cores, posicionamento, fontes, tamanhos e imagens de fundo, enquanto o HTML deve fornecer uma “arquitetura” para o conteúdo. O suporte a CSS pelos navegadores de hoje é bem sólido, mas teve um início tímido, sendo inicialmente suportado pelo navegador Netscape.A primeira versão da especificação foi lançada em 1996 e uma segunda versão publicada em 1998 mas até 2009 nem todos os navegadores em uso suportavam plenamente seus recursos. Uma nova versão da especificação está em desenvolvimento e felizmente os navegadores mais recentes já estão testando-a.
@@ -115,7 +115,7 @@
           </p>
 
 
-          <hr style="width: 1000px">
+          <hr >
 
           <!-- Comments Form -->
           <div class="card my-4">
@@ -153,7 +153,7 @@
 
        
           <!-- Categories Widget -->
-          <div  style="height:150px; width:300px; " class="card my-4">
+          <div  class="card my-4" style="margin-left: 20px;">
             <h5 class="card-header">Categorias</h5>
             <div class="card-body">
               <div class="row">
@@ -170,13 +170,13 @@
                 <div class="col-lg-6">
                   <ul class="list-unstyled mb-0">
                     <li>
-                      <a href="#javascript">JavaScript</a>
+                      <a href="noticias_linguagens">JavaScript</a>
                     </li>
                     <li>
-                      <a href="#css">CSS</a>
+                      <a href="noticias_linguagens">CSS</a>
                     </li>
                      <li>
-                      <a href="#html">HTML </a>
+                      <a href="noticias_linguagens">HTML </a>
                     </li>
                   </ul>
                 </div>
@@ -186,19 +186,26 @@
         </div>
 
       </div>
-      <div class="rodape" style="margin-top: 20px;">
-          <h1>
-            <a href="https://www.youtube.com/user/GrupoImpacta">
-            <i  class="fab fa-youtube"></i></a>
-            
-            <a href="https://www.instagram.com/faculdadeimpacta/?hl=pt-br">
-            <i class="fab fa-instagram" ></i></a>
-            
-            <a href="https://twitter.com/facimpacta">
-            <i class="fab fa-twitter-square"></i></a>
-            
-            <a href="https://pt-br.facebook.com/FacImpacta/">
-            <i class="fab fa-facebook"></i></h1></a>
+    
+     
+    <div class="rodape" style="margin-top: 20px;">
+          <div class="middle">
+            <a class="btn" href="https://pt-br.facebook.com/impactaoficial/" target="_blank">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a class="btn" href="https://twitter.com/facimpacta" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a class="btn" href="https://www.impacta.edu.br/" target="_blank">
+              <i class="fab fa-google"></i>
+            </a>
+            <a class="btn" href="https://www.instagram.com/faculdadeimpacta/?hl=pt-br" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a class="btn" href="https://www.youtube.com/user/GrupoImpacta" target="_blank">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
 
           <p><a href="">FAQ  </a>  
             <a href="">Política de Privacidade  </a>      
