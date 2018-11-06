@@ -2,30 +2,36 @@ body, html {
     height: 100%;
     margin: 0;
     padding: 0;
+    font-family: 'Fjalla One', sans-serif;
 
 }
-
-.hero-image button{
-	width: 150px;
-	height: 30px;
-	border-radius: 5px;
-	border:1px solid black;
-	background: transparent;
-
+.cabecalho img{
+    margin-top:-67px;
 }
+
 h1{
 	font-family: 'Fjalla One', sans-serif;
 	color: white;
 }
 .hero-text a{
-	color: white;
+    background: transparent;
+    border: 1px solid #f2f2f2;
+    padding: 5px 5px;
+    border-radius:5px; 
+    color: white;
 	text-decoration: none;
-	font-size: 15px;
-	text-transform: uppercase;
+	font-size: 20px;
+    width: 230px;
 }
-.hero-text button:hover{
-  background: black; 
+.hero-text a:hover{
+  background: black;
+  text-decoration: none;
+  border: 1px solid black;
+  color: white;
+
+
 }
+
 
 i{	
     color: white;
@@ -43,7 +49,7 @@ i:hover{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/fundo.jpg");
 	padding: 50px;
 	margin-top:-6px;
-    height: 100%;
+    height:600px;;
     background-attachment: fixed;
     background-size: cover;
     background-repeat: repeat;
@@ -109,8 +115,7 @@ span{
 
 .hero-image {
 	background: url(../img/fundo-login.jpg);
-   
-    height: 100%;
+    height: 700px;
     background-attachment: fixed;
     background-size: cover;
     background-repeat: repeat;
@@ -142,7 +147,7 @@ h1{	 font-family: 'Fjalla One', sans-serif;
 .inicio{
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.impacta.edu.br/blog/wp-content/uploads/2018/08/banner-blog-1.png");
 	color: white;
-    height: 100%;
+    height: 600px;;
     background-attachment: fixed;
     background-size: cover;
     background-repeat: repeat;
@@ -153,15 +158,23 @@ h1{	 font-family: 'Fjalla One', sans-serif;
     text-align: justify;
 	line-height:30px;
 	font-size: 18px;
-	font-family: 'Exo 2', 'sans-serif';
+    font-family: 'Exo 2', 'sans-serif';
+    width: 1300px;
+    margin: auto;
+  
 }
 .inicio i{
 	margin-left: 45%;
 	margin-top: -20px;
 }
+.inicio h1{
+    text-align: center;
+}
 
 .fundo_final h1{
-	font-size: 60px;
+    font-size: 60px;
+    padding: 40px 0 0 0;
+    text-shadow: 1px 1px 0px #eee, 4px 3px 0px #707070;
 }
 .fundo_final p{
 	font-size: 22px;
