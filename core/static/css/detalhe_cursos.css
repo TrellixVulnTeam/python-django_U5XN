@@ -1,6 +1,17 @@
-body {
-  background: #f2f2f2;
-  text-align: justify;
+p{
+  width: 1000px;
+  margin: auto;
+  line-height: 30px;
+}
+.mt-4{
+  text-align: center;
+  font-size: 25px; 
+  font-weight: bold;
+  width: 400px;
+  padding: 5px;
+  border-radius: 5px;
+  margin: auto;
+  border:2px solid #f2f2f2;
 }
 .categorias p{
   background: grey;
@@ -11,10 +22,10 @@ body {
   text-transform: uppercase;
  }
 .categorias{
-  border: 1px solid black; 
+   border: 1px solid black; 
    width: 350px;
-   margin-left: 700px;
-   margin-top: -60px;
+   margin: auto;
+   margin-top: 30px;
    height: 80px;
    border-radius: 5px;
  }
